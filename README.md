@@ -24,8 +24,9 @@ Run the Python script:
 
 ```bash
 python volume_control.py
-Place your hand in front of the webcam.
+
 ```
+Place your hand in front of the webcam.
 
 - Show a thumbs-up gesture to increase the volume.
 
