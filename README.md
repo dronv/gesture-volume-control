@@ -2,6 +2,9 @@
 
 This Python script allows you to control the volume of your PC using hand gestures detected by the MediaPipe library. It captures your webcam feed and adjusts the volume based on your thumbs-up and thumbs-down gestures.
 
+### Demo
+https://github.com/dronv/gesture-volume-control/assets/41694884/114f1e48-e127-4143-86e0-9112f2e73d89
+
 ## Prerequisites
 
 Before running the script, make sure you have the following installed:
