@@ -39,12 +39,18 @@ while cap.isOpened():
             thumb_down = thumb_y > index_y
 
             if thumb_up and not thumb_down_detected:
+                cv2.putText(frame, 'thumbs up', (20, 50),
+                                cv2.FONT_HERSHEY_COMPLEX, 0.9,
+                                (0, 255, 0), 2)
                 current_volume = volume.GetMasterVolumeLevelScalar()
                 new_volume = min(current_volume + volume_change, 1.0)
                 volume.SetMasterVolumeLevelScalar(new_volume, None)
                 thumb_up_detected = True
                 thumb_down_detected = False
             elif thumb_down and not thumb_up_detected:
+                cv2.putText(frame, 'thumbs down', (20, 50),
+                                cv2.FONT_HERSHEY_COMPLEX, 0.9,
+                                (0, 0, 255), 2)
                 current_volume = volume.GetMasterVolumeLevelScalar()
                 new_volume = max(current_volume - volume_change, 0.0)
                 volume.SetMasterVolumeLevelScalar(new_volume, None)
